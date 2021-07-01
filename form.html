@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Form </title>
+</head>
+<body>
+    <h1>Registration form</h1>
+
+    <form>
+       <div>
+            <label for="fullname">FullName:</label> <input type="text" name="fullname" id="fullname" > 
+ 
+       </div>
+<br/>
+       <div>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="Faysol"   size="8"><br>
+
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Amir" size="8">   
+       </div>
+<br>
+       <div>
+           
+               <label for="email">Email:  </label> <input type="email" name="email" id="email" required  placeholder="faysol16@gmail.com">
+           
+       </div>
+<br>       
+       <div>
+           
+               <label for="password">Password: </label> <input type="password" name="password" id="password" required maxlength="12">
+           
+       </div> 
+<br>
+       <div>
+           
+               <label for="dob"> Date Of Birth</label> <input type="date" name="dob" id="dob">
+
+           
+       </div>
+<br> 
+       <div>
+           
+               <label for="photo">Chose your Photo</label> <input type="file" name="photo" id="photo" >
+           
+       </div>
+<br>
+        <div>
+            
+                <label for="gender"> Gender :</label> <input type="radio" name="gender" id="gender" value="male" > Male
+                
+                 <input type="radio" name="gender" id="gender" value="female"> Female
+              
+        </div>
+<br>
+        <div> 
+            
+                <label for="religion"> Religion :</label> <input type="checkbox" name="religion" id="religion" value="religion" > Islam
+                
+                <input type="checkbox" name="religion" id="religion"  value="religion"> Hindu
+
+                <input type="checkbox" name="religion" id="religion" value="religion" > Christan
+             
+        </div>
+<br>
+        <div>
+            <!--Drop down -->
+                <label for="department">Department</label> 
+                <select name="department" size="4" multiple >
+                    <option value="LLB">L.L.B</option>
+                    <option value="English">English</option>
+                    <option value="Bangla">Bangla</option>
+                    <option value="CSE" selected>CSE</option>  <!--Initially i can selet CSE by using selected attribute -->
+                    <option value="EEE">Bangla</option>
+                    <option value="Civi">Bangla</option>
+                </select>
+            
+        </div>
+<br>
+        <div>
+            <label for="color">Select Your favorite Color</label>
+            <input type="color" name="color" id="color" > <input type="submit" value="Submit">
+        </div> 
+
+<br>
+        <div>
+            <label for="datetime-local">datetime-local</label>
+            <input type="datetime-local" name="datetime-local" id="datetime-local" >
+        </div> 
+<br>
+        <div>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"> <br><br>
+                <input type="hidden" id="custId" name="custId" value="3487">
+                <input type="submit" value="Submit">
+        </div> 
+<br>
+        <div>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+                <input type="image" src="Faysol.jpg" alt="Submit" width="48" height="48">
+        </div>
+<br>
+        <div>
+            <label for="month">Month</label>
+            <input type="month" name="month" id="month" >
+        </div> 
+<br>
+        <div>
+            <label for="Quantity">Quantity (Between 1 and 10)</label> 
+            <input type="number" name="Quantity" id="Quantity" min="0" max="10" step="2">
+        </div>
+<br>
+        <div>
+            <label for="range">Range (Between 0 to 50)</label> 
+            <input type="range" name="range" id="range" min="0" max="50" step="5" > 
+        </div> 
+<br>
+        <div>
+            <label for="gsearch">Search Google: </label>
+            <input type="search" name="gsearch" id="gsearch" >
+        </div>
+<br>
+        <div>
+            <label for="TelePhone">Enter your Phone number: </label>
+            <input type="tel" name="TelePhone" id="TelePhone" placeholder="01712-329-913" pattern="[0-9]{5}-[0-9]{3}-[0-9]{3}" >
+        </div>
+<br>
+        <div>
+            <label for="time">Time</label>
+            <input type="time" name="time" id="time" >
+        </div>
+<br>
+        <div>
+            <label for="url">Add Your HomePage</label>
+            <input type="url" name="url" id="url" >
+        </div>
+<br>
+        <div>
+            <label for="week"> Select a Week</label>
+            <input type="week" name="week" id="week" >
+        </div> 
+<br>
+        <div>
+                <!--For understanding pattern attribute-->
+                <h1>The input pattern attribute</h1>
+
+                <p>The pattern attribute specifies a regular expression that the input element's value is checked against.</p>
+
+        <form action="/action_page.php">
+                <label for="country_code">Country code:</label>
+                <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code"><br><br>
+                <input type="submit" value="Submit">
+        </form>
+
+        <p><strong>Note:</strong> The pattern attribute of the input tag is not supported in Safari 10 (or earlier).</p>
+
+        </div>
+<br>
+        <div>
+            
+            <input type="reset" name="reset" id="reset" >
+            <input type="submit" name="submit" id="submit" >
+        </div>
+<br>
+       <div>
+           <label for="Feedback">Feedback</label> <br>
+           <textarea cols="30" rows="10"></textarea> <br>
+
+           <!-- <button>Feedback</button> -->
+       </div>
+<br> 
+       <div>
+           <input type="submit" value="Feedback">
+           <input type="reset" value="Clear" disabled>
+       </div>
+    </form>
+<br>
+        <h1>The autocomplete attribute</h1>
+
+        <p>The autocomplete attribute specifies whether or not an input field should have autocomplete enabled.</p>
+
+        <p>Fill in and submit the form, then reload the page to see how autocomplete works.</p>
+
+        <p>Notice that autocomplete is "on" for the form, but "off" for the e-mail field!</p>
+
+        <form autocomplete="on">
+
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" autocomplete="off"><br><br>
+
+                <input type="submit" value="Submit"> 
+
+        </form>
+
+</body>
+</html>
